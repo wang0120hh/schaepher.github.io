@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.2.6 -->
+
+    <!-- Title -->
+    
+    <title>
+        
+        Schaepher&#39;s Blog
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & Info -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Schaepher">
+    <meta name="description" content="Hi. I am Schaepher.">
+    <meta name="keywords" content="null">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Schaepher&#39;s Blog">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://schaepher.github.io">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Schaepher&#39;s Blog">
+    <meta property="og:description" content="Hi. I am Schaepher.">
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+    body, html {
+        font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    }
+
+    a {
+        color: #00838F;
+    }
+
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important;
+    }
+
+    /* Sidebar User Drop Down Menu Text Color */
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+        color: #0097A7 !important;
+    }
+
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+        color: #0097A7 !important;
+    }
+
+    .toTop {
+        background: #757575 !important;
+    }
+
+    .material-layout .material-post>.material-nav,
+    .material-layout .material-index>.material-nav,
+    .material-nav a {
+        color: #757575;
+    }
+
+    #scheme-Paradox .MD-burger-layer {
+        background-color: #757575;
+    }
+
+    #scheme-Paradox #post-toc-trigger-btn {
+        color: #757575;
+    }
+
+    .post-toc a:hover {
+        color: #00838F;
+        text-decoration: underline;
+    }
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-image: url(/img/bg.png);
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+
+    <script src="/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/highlight/atom-one-dark.css">
+
+    <!-- UC Browser Compatible-->
+    <script>
+        var agent = navigator.userAgent.toLowerCase();
+        if(agent.indexOf('ucbrowser')>0) {
+            document.write('<link rel="stylesheet" href="/css/uc.css">');
+            alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+        }
+    </script>
+
+    <!-- Custom Head -->
+    
+</head>
+
+
+    
+        <body id="scheme-Paradox">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#帮我们快捷实现用于测试接口的一个框架"><span class="post-toc-number">1.</span> <span class="post-toc-text">帮我们快捷实现用于测试接口的一个框架</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了"><span class="post-toc-number">2.</span> <span class="post-toc-text">如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Schaepher</strong>
+        <span>1月 19, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=https://schaepher.github.io//2017/01/19/unit-testing/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=https://schaepher.github.io//2017/01/19/unit-testing/index.html&via=Schaepher" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://schaepher.github.io//2017/01/19/unit-testing/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://schaepher.github.io//2017/01/19/unit-testing/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>eclipse提示快捷键：alt+/<br>Ctril+Shift+O<br>说明:自动引入所需要得包<br>Atom选字再按`号，会直接将选中的字包围起来</p>
+<p>程序员是懒惰的，但是与降低效率的懒惰不同，这种类型的懒惰促进了效率的提升。<br>            —— 沃兹基硕德</p>
+<ol>
+<li><p>你为什么要学单元测试？可以不学单元测试吗？<br>懒人必备</p>
+</li>
+<li><p>AssertXxx是什么玩意儿？<br> 我们写的测试代码在运行的时候会产生一些结果，验证这些结果是否符合预期的一个低效方法就是将这些结果输出到控制台（Console）或者文件，然后你自己用眼睛一个个去对比。   </p>
+<p> 如果你懒得去比呢？又或者说你对比的时候觉得没错，但是实际上是因为一个<code>1</code>和<code>l</code>的错误导致你没有发现呢？  </p>
+<p> 就让Assert来帮你解决这些烦人的问题吧！Assert(中文为：断言)就是让你将预期的结果和程序运行的结果传入它的方法里面，由它来替你做对比的事情。   </p>
+<p> 例如一个测试结果是否相等的Assert：<br> <code>assertEquals(你自己算出的结果, 程序运行的结果);</code><br> 如果两个结果不同，即程序运行的结果不符合你的预期，那么它就会提示你这里出现了错误。    </p>
+<p> 从此，你就从几百甚至是几万条的测试代码输出的对比中解放出来，大大节约了你的时间。  </p>
+<p> 测试框架（Junit，Nunit等）：实际上就是提供一个用于测试的框架，学习这些内容是学习框架的结构，以及如何使用assert，而不是学习单元测试的方法。这两者要区分开来。</p>
+</li>
+<li><p>单元测试所面临的问题？<br> 一个类的方法里包含了<code>其他类</code>的方法，怎么测试？——依赖隔离。<br> 如果我的测试依赖于Web服务，怎么测试？——依赖隔离。   </p>
+<p> 依赖隔离的例子：<br> 航天飞机在送入太空之前，要先进行测试，否则飞到一半出了问题怎么办？<br> 而有一部分测试是确保宇航员已经准备好进入太空。但是你又不能让宇航员真的坐实际的航天飞机去测试。有个办法就是建造一套仿真系统，模拟航天飞机控制台的环境。<br> 在这个例子中，通过模拟外部环境来解除了对外部环境的依赖。同样的方法可以用到测试中。</p>
+<p> 一个类的方法里包含了<code>该类的其他方法</code>，要怎么测试？？？？</p>
+<p> 一个类的方法有很多个对数据处理的步骤，是要测试最终结果，还是要对每个处理的步骤可能出现的问题进行测试？？？？</p>
+<p> 一个方法没有返回值（即void）怎么办？——使用mock验证这个方法里成功调用了其他类的某个方法，并传入了正确的参数。<a href="http://chriszou.com/2016/04/25/android-unit-testing-wechat-group-share.html" target="_blank" rel="external">Android单元测试在蘑菇街支付金融部门的实践</a></p>
+</li>
+<li><p>单元测试的步骤依次是什么？ </p>
+<ol>
+<li>测试之前需要准备的数据，例如new出要测试的类——<code>Setup</code></li>
+<li>执行要测试的类的方法——<code>Action</code></li>
+<li><p>最后添加Assert以验证结果——<code>Verify</code></p>
+<blockquote>
+<p>上面这三步是在一个测试方法里面写的。在写测试方法前要先创建一个用于测试的类。这个类的类名以<code>Test</code>结尾。在类里面添加测试方法，测试方法名前面要加上test，接在test后面的是被测试的方法名。然后在这个方法内写上上面三步的代码。</p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li><p>应该对哪些代码编写单元测试？<br> 不经常改动的代码</p>
+</li>
+<li><p>不应该对哪些代码编写单元测试？<br> 经常改动的代码  </p>
+</li>
+<li><p>单元测试应该注意哪些问题？  </p>
+</li>
+<li><p>对某一单元编写测试时，测试到什么程度应该停下来？</p>
+</li>
+<li><p>在使用断言确认字符串的时候，应该把整个预期字符串都写上么？</p>
+</li>
+</ol>
+<ol>
+<li>单元测试总体上需要做些什么？  <ul>
+<li>只考虑代码在最正确的操作和条件下能否得出正确的结果</li>
+<li>在数据的边界条件下能否得到正确的结果</li>
+<li>代码在所有可能的错误数据下能否给出错误提示或者不至于崩溃</li>
+<li>如何消除依赖隔离</li>
+</ul>
+</li>
+</ol>
+<p><a href="http://www.cnblogs.com/AloneSword/p/4109407.html" target="_blank" rel="external">http://www.cnblogs.com/AloneSword/p/4109407.html</a></p>
+<ol>
+<li><p>单元测试的任务（与特定语言和平台无关）</p>
+<ul>
+<li>接口功能测试：用来保证接口功能的正确性。</li>
+<li>局部数据结构测试（不常用）：用来保证接口中的数据结构是正确的<ul>
+<li>比如变量有无初始值</li>
+<li>变量是否溢出</li>
+</ul>
+</li>
+<li>边界条件测试<ul>
+<li>变量没有赋值（即为NULL）</li>
+<li>变量是数值（或字符)<ul>
+<li>主要边界：最小值，最大值，无穷大（对于DOUBLE等）</li>
+<li>溢出边界（期望异常或拒绝服务）：Min - 1，Max + 1</li>
+<li>临近边界：Min + 1，Max - 1</li>
+</ul>
+</li>
+<li>变量是字符串<ul>
+<li>应用上面提到的<code>字符变量</code>的边界</li>
+<li>空字符串</li>
+<li>对字符串长度应用<code>数值变量</code>的边界</li>
+</ul>
+</li>
+<li>变量是集合<ul>
+<li>空集合（Empty）</li>
+<li>对集合的大小应用<code>数值变量</code>的边界</li>
+<li>调整次序：升序、降序</li>
+</ul>
+</li>
+<li>变量有规律<ul>
+<li>比如对于Math.sqrt，给出n^2-1，和n^2+1的边界</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>所有独立执行通路测试：保证每一条代码，每个分支都经过测试<ul>
+<li>代码覆盖率<ul>
+<li>语句覆盖：保证每一个语句都执行到了</li>
+<li>判定覆盖（分支覆盖）：保证每一个分支都执行到</li>
+<li>条件覆盖：保证每一个条件都覆盖到true和false（即if、while中的条件语句）</li>
+<li>路径覆盖：保证每一个路径都覆盖到</li>
+</ul>
+</li>
+<li>相关软件<ul>
+<li>Cobertura：语句覆盖</li>
+<li>Emma: Eclipse插件Eclemma</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>各条错误处理通路测试：保证每一个异常都经过测试  </li>
+</ul>
+</li>
+<li><p>单元测试的任务（在Android上）</p>
+<ul>
+<li>所有的Model、Presenter/ViewModel、Api、Utils等类的public方法</li>
+<li>Data类除了getter、setter、toString、hashCode等一般自动生成的方法之外的逻辑部分</li>
+<li>自定义View的功能：比如set data以后，text有没有显示出来等等，简单的交互，比如click事件，负责的交互一般不测，比如touch、滑动事件等等。</li>
+<li>Activity的主要功能：比如view是不是存在、显示数据、错误信息、简单的点击事件等。比较复杂的用户交互比如onTouch，以及view的样式、位置等等可以不测。因为不好测。</li>
+</ul>
+</li>
+<li><p>出现BUG</p>
+<p> 先编写一个单元测试，这个测试针对于这个BUG。由于它是一个BUG，所以显然这个单元测试一开始给出的结果会是失败的。此时你修复BUG，并运行测试。如果测试成功，则表示你成功修复了这个BUG；如果测试失败，则表示BUG仍然存在。</p>
+<p> 换句话说，这个单元测试暴露了这个BUG。BUG本来没看出来，而这个单元测试的失败表明了BUG的存在。</p>
+<p> 添加新功能也是同样。写出一个会失败的测试，表示缺少这个功能。然后通过修改代码使得测试通过，就表明你成功添加了新功能。 </p>
+</li>
+<li><p>其他<br> 看到 add(a, b) 这种测试例子我就来气。太过于简单，以至于没有代表性。<br> 比如你看完了add(a, b)和sub(a, b)这些例子，那么我问你，要测试一个读取文件的read()方法该如何测试？<br> 在《重构：改善既有代码的设计》里面，有个测试读取文件的例子，那个例子看起来舒服多了。</p>
+<p> 《测试驱动开发  Kent Beck》</p>
+</li>
+<li><p>Mock/Stub<br> Mock和Stub是两种测试代码功能的方法。Mock测重于对功能的模拟。Stub测重于对功能的测试重现。比如对于List接口，Mock会直接对List进行模拟，而Stub会新建一个实现了List的TestList，在其中编写测试的代码。  </p>
+<p> 强烈建议优先选择Mock方式，因为Mock方式下，模拟代码与测试代码放在一起，易读性好，而且扩展性、灵活性都比Stub好。</p>
+</li>
+</ol>
+<hr>
+<p>参考文章：<br><a href="https://segmentfault.com/a/1190000006811141" target="_blank" rel="external">https://segmentfault.com/a/1190000006811141</a></p>
+<p>依赖隔离：<br>依赖：当前类A需要调用其他类B的方法，A依赖于B。<br>隔离方法：<br>将B改成一个接口C。<br>将A中的B类替换为接口C。</p>
+<ul>
+<li>在项目执行代码中：传入A的对象是接口C的一个派生类D（实现了接口C）。这个D是项目中实际会运行的代码，对于接口C是完整的实现。  </li>
+<li>在单元测试的代码（独立于项目执行代码，实际运行程序时要把这部分删掉）中：传入A的对象也是实现了接口C的一个派生类E，但是这个类与D不同，它对于接口C的实现可能就只是一个return。从而模拟（Mock）了派生类D的行为，使得在测试的时候，不需要使用D类。</li>
+</ul>
+<p>类A：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public class Calculater &#123;</div><div class="line"></div><div class="line">    public double divide(int a, int b) &#123;</div><div class="line">        // 检测被除数是否为0</div><div class="line">        if (MathUtils.checkZero(b)) &#123;</div><div class="line">            throw new RuntimeException(&quot;dividend is zero&quot;);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        return (double) a / b;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>它调用了类B（MathUtils）的checkZero方法。于是类A依赖于类B的checkZero方法。  </p>
+<p>类B是一个具体实现的类：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">public class MathUtils &#123;</div><div class="line">    public static boolean checkZero(int num) &#123;</div><div class="line">        return num == 0;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>在知道产生依赖之后，要将类B改成一个接口(前缀I表示这是一个接口)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public interface IMathUtils &#123;</div><div class="line">    public boolean checkZero(int num);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>在类A的代码中，将B替换成该接口：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">public class Calculater &#123;</div><div class="line"></div><div class="line">    IMathUtils mathUtils = new MathUtils();   // 这里的代码改动了</div><div class="line">    </div><div class="line">    // 这里的代码改动了。中间有一个地方向该类传入了mathUtils</div><div class="line">    public void setMathUtils(IMathUtils mathUtils)&#123;</div><div class="line">        this.mathUtils = mathUtils;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public double divide(int a, int b) &#123;</div><div class="line">        if (mathUtils.checkZero(b)) &#123; // 这里的代码改动了</div><div class="line">            throw ...</div><div class="line">        &#125;</div><div class="line">        return (double) a / b;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>之前的B是一个静态类，不需要声明，但改成接口后需要声明。  </p>
+<p>这样改动之后呢？<br>对于实际运行的代码，要有一个类去实现IMathUtils接口，然后传入Calculater。<br>对于用于测试的代码，也是一个类实现IMathUtils接口，然后传入Calculater。但不同的是，这个类的实现可能只需添加一个return语句，不用细致实现。</p>
+<h3 id="帮我们快捷实现用于测试接口的一个框架"><a href="#帮我们快捷实现用于测试接口的一个框架" class="headerlink" title="帮我们快捷实现用于测试接口的一个框架"></a>帮我们快捷实现用于测试接口的一个框架</h3><ol>
+<li>Mockito<br>对于刚才那个接口IMathUtils，我们可以不用再新建一个类去实现它，而是交给Mockito。<br>IMathUtils mathUtils = mock(IMathUtils.class); // 生成mock对象</li>
+</ol>
+<p>when(mathUtils.checkZero(1)).thenReturn(false);  // 这里是快捷实现，你告诉Mockito，如果在下面代码调用了mathUtils.checkZero()并传入参数<code>1</code>，那么就让调用这个方法的地方返回<code>false</code>这个值。</p>
+<h3 id="如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了"><a href="#如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了" class="headerlink" title="如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了"></a>如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了</h3><p>单元测试相关名词释义一览：<br>依赖注入：  </p>
+<p><a href="http://mday.mogu.io/" target="_blank" rel="external">关于 Android 单元测试的一切</a><br><a href="http://www.cnblogs.com/yangcaogui/archive/2012/02/08/2336123.html" target="_blank" rel="external">http://www.cnblogs.com/yangcaogui/archive/2012/02/08/2336123.html</a>  </p>
+
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+    <!-- 使用 DISQUS -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+<script>
+    $('html').ready(function() {
+        setTimeout(function() {
+            var disqus_config = function () {
+                this.page.url = 'https://schaepher.github.io/2017/01/19/unit-testing/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//null.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        },1500);
+    });
+</script>
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/01/19/GitAndGithub/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Schaepher's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        schaepher@outlook.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+            主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+    <!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+    -->
+
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">2</span></a>
+        </ul>
+    </li>
+
+    <!-- Categories  -->
+    
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+  	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+            文章总数
+            <span class="sidebar-badge">2</span>
+        </a>
+    </li>
+</ul>
+
+
+        <!-- Sidebar Divider -->
+        <div class="sidebar-divider"></div>
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Theme Material -->
+<!-- <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+        主题 - Material
+        <span class="sidebar-badge badge-circle">i</span>
+    </div>
+</a> -->
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+    sidebar.help
+    <span class="mdl-button__ripple-container">
+      <span class="mdl-ripple"></span>
+    </span>
+  </div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+    </div>
+
+    <!-- Sidebar Sponsor -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/schaepher" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-github.png);">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;
+            <script type="text/javascript">
+                var fd = new Date();
+                document.write(fd.getFullYear());
+            </script>
+            &nbsp;Schaepher's Blog
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import File -->
+<script src="/js/highlight.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 使用 DISQUS js 代码 -->
+    <script id="dsq-count-scr" src="//null.disqus.com/count.js" async></script>
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+</script>
+
+<!-- MathJax Load-->
+
+
+                </main>
+            </div>
+        </body>
+    
+</html>
