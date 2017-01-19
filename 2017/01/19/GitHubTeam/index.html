@@ -10,7 +10,7 @@
     
     <title>
         
-            单元测试 | 
+            Github团队合作流程 | 
         
         Schaepher&#39;s Blog
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://schaepher.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="单元测试 | Schaepher&#39;s Blog">
+    <meta property="og:title" content="Github团队合作流程 | Schaepher&#39;s Blog">
     <meta property="og:description" content="Hi. I am Schaepher.">
 
     <!--[if lte IE 9]>
@@ -221,7 +221,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#帮我们快捷实现用于测试接口的一个框架"><span class="post-toc-number">1.</span> <span class="post-toc-text">帮我们快捷实现用于测试接口的一个框架</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了"><span class="post-toc-number">2.</span> <span class="post-toc-text">如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了</span></a></li></ol>
+        
 
         <!--
         <li class="mdl-menu__item">
@@ -257,7 +257,7 @@
         
     
             <p class="article-headline-p">
-                单元测试
+                Github团队合作流程
             </p>
         </div>
 
@@ -316,7 +316,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=单元测试&url=https://schaepher.github.io//2017/01/19/unit-testing/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Github团队合作流程&url=https://schaepher.github.io//2017/01/19/GitHubTeam/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -325,7 +325,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=单元测试&url=https://schaepher.github.io//2017/01/19/unit-testing/index.html&via=Schaepher" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Github团队合作流程&url=https://schaepher.github.io//2017/01/19/GitHubTeam/index.html&via=Schaepher" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -334,7 +334,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://schaepher.github.io//2017/01/19/unit-testing/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://schaepher.github.io//2017/01/19/GitHubTeam/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -343,7 +343,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://schaepher.github.io//2017/01/19/unit-testing/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://schaepher.github.io//2017/01/19/GitHubTeam/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -367,149 +367,205 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>eclipse提示快捷键：alt+/<br>Ctril+Shift+O<br>说明:自动引入所需要得包<br>Atom选字再按`号，会直接将选中的字包围起来</p>
-<p>程序员是懒惰的，但是与降低效率的懒惰不同，这种类型的懒惰促进了效率的提升。<br>            —— 沃兹基硕德</p>
-<ol>
-<li><p>你为什么要学单元测试？可以不学单元测试吗？<br>懒人必备</p>
+        <p>已在另一篇博客中写出关于以下问题的解决，<a href="http://www.cnblogs.com/schaepher/p/4970291.html" target="_blank" rel="external">点此进入</a>：</p>
+<ul>
+<li>同步团队项目到本地时出现冲突怎么办？</li>
+<li>项目负责人merge一个Pull Request后发现有错怎么回退？</li>
+</ul>
+<p>##目录：</p>
+<ul>
+<li><a href="#first">零、前期准备</a>  </li>
+<li><a href="#second">一、创建开发分支</a>   </li>
+<li><a href="#third">二、Fork项目到个人的仓库</a>  </li>
+<li><a href="#four">三、Clone项目到本地</a>  </li>
+<li><a href="#five">四、和团队项目保持同步</a> </li>
+<li><a href="#six">五、push修改到自己的项目上</a></li>
+<li><a href="#seven">六、请求合并到团队项目上</a></li>
+<li><a href="#eight">七、团队项目负责人审核及同意合并请求</a></li>
+</ul>
+<hr>
+<p><a name="first"></a></p>
+<p>###零、前期准备：</p>
+<ul>
+<li>首先把队友直接push的权限关掉，即设置成Read。这样可以防止队友误操作，未经审核就把代码push到团队项目上。  </li>
+<li><p>Teams用来分配issue的时候会用到，所以保留下来，并不是没有用。</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173652383-2141612893.png" alt=""></p>
 </li>
-<li><p>AssertXxx是什么玩意儿？<br> 我们写的测试代码在运行的时候会产生一些结果，验证这些结果是否符合预期的一个低效方法就是将这些结果输出到控制台（Console）或者文件，然后你自己用眼睛一个个去对比。   </p>
-<p> 如果你懒得去比呢？又或者说你对比的时候觉得没错，但是实际上是因为一个<code>1</code>和<code>l</code>的错误导致你没有发现呢？  </p>
-<p> 就让Assert来帮你解决这些烦人的问题吧！Assert(中文为：断言)就是让你将预期的结果和程序运行的结果传入它的方法里面，由它来替你做对比的事情。   </p>
-<p> 例如一个测试结果是否相等的Assert：<br> <code>assertEquals(你自己算出的结果, 程序运行的结果);</code><br> 如果两个结果不同，即程序运行的结果不符合你的预期，那么它就会提示你这里出现了错误。    </p>
-<p> 从此，你就从几百甚至是几万条的测试代码输出的对比中解放出来，大大节约了你的时间。  </p>
-<p> 测试框架（Junit，Nunit等）：实际上就是提供一个用于测试的框架，学习这些内容是学习框架的结构，以及如何使用assert，而不是学习单元测试的方法。这两者要区分开来。</p>
-</li>
-<li><p>单元测试所面临的问题？<br> 一个类的方法里包含了<code>其他类</code>的方法，怎么测试？——依赖隔离。<br> 如果我的测试依赖于Web服务，怎么测试？——依赖隔离。   </p>
-<p> 依赖隔离的例子：<br> 航天飞机在送入太空之前，要先进行测试，否则飞到一半出了问题怎么办？<br> 而有一部分测试是确保宇航员已经准备好进入太空。但是你又不能让宇航员真的坐实际的航天飞机去测试。有个办法就是建造一套仿真系统，模拟航天飞机控制台的环境。<br> 在这个例子中，通过模拟外部环境来解除了对外部环境的依赖。同样的方法可以用到测试中。</p>
-<p> 一个类的方法里包含了<code>该类的其他方法</code>，要怎么测试？？？？</p>
-<p> 一个类的方法有很多个对数据处理的步骤，是要测试最终结果，还是要对每个处理的步骤可能出现的问题进行测试？？？？</p>
-<p> 一个方法没有返回值（即void）怎么办？——使用mock验证这个方法里成功调用了其他类的某个方法，并传入了正确的参数。<a href="http://chriszou.com/2016/04/25/android-unit-testing-wechat-group-share.html" target="_blank" rel="external">Android单元测试在蘑菇街支付金融部门的实践</a></p>
-</li>
-<li><p>单元测试的步骤依次是什么？ </p>
-<ol>
-<li>测试之前需要准备的数据，例如new出要测试的类——<code>Setup</code></li>
-<li>执行要测试的类的方法——<code>Action</code></li>
-<li><p>最后添加Assert以验证结果——<code>Verify</code></p>
-<blockquote>
-<p>上面这三步是在一个测试方法里面写的。在写测试方法前要先创建一个用于测试的类。这个类的类名以<code>Test</code>结尾。在类里面添加测试方法，测试方法名前面要加上test，接在test后面的是被测试的方法名。然后在这个方法内写上上面三步的代码。</p>
+</ul>
+<hr>
+<p><a name="second"></a></p>
+<p>###一、创建开发分支</p>
+<ul>
+<li>master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。</li>
+<li>输入分支名称后，下面会跳出Create branch，点击即可创建。<blockquote>
+<p>下面图片写的是develop，是因为我们这个项目已经有dev分支了。如果你们没有dev分支，那么名字改成dev即可。这个影响不大。</p>
 </blockquote>
 </li>
-</ol>
-</li>
-<li><p>应该对哪些代码编写单元测试？<br> 不经常改动的代码</p>
-</li>
-<li><p>不应该对哪些代码编写单元测试？<br> 经常改动的代码  </p>
-</li>
-<li><p>单元测试应该注意哪些问题？  </p>
-</li>
-<li><p>对某一单元编写测试时，测试到什么程度应该停下来？</p>
-</li>
-<li><p>在使用断言确认字符串的时候，应该把整个预期字符串都写上么？</p>
-</li>
-</ol>
-<ol>
-<li>单元测试总体上需要做些什么？  <ul>
-<li>只考虑代码在最正确的操作和条件下能否得出正确的结果</li>
-<li>在数据的边界条件下能否得到正确的结果</li>
-<li>代码在所有可能的错误数据下能否给出错误提示或者不至于崩溃</li>
-<li>如何消除依赖隔离</li>
 </ul>
-</li>
-</ol>
-<p><a href="http://www.cnblogs.com/AloneSword/p/4109407.html" target="_blank" rel="external">http://www.cnblogs.com/AloneSword/p/4109407.html</a></p>
-<ol>
-<li><p>单元测试的任务（与特定语言和平台无关）</p>
-<ul>
-<li>接口功能测试：用来保证接口功能的正确性。</li>
-<li>局部数据结构测试（不常用）：用来保证接口中的数据结构是正确的<ul>
-<li>比如变量有无初始值</li>
-<li>变量是否溢出</li>
-</ul>
-</li>
-<li>边界条件测试<ul>
-<li>变量没有赋值（即为NULL）</li>
-<li>变量是数值（或字符)<ul>
-<li>主要边界：最小值，最大值，无穷大（对于DOUBLE等）</li>
-<li>溢出边界（期望异常或拒绝服务）：Min - 1，Max + 1</li>
-<li>临近边界：Min + 1，Max - 1</li>
-</ul>
-</li>
-<li>变量是字符串<ul>
-<li>应用上面提到的<code>字符变量</code>的边界</li>
-<li>空字符串</li>
-<li>对字符串长度应用<code>数值变量</code>的边界</li>
-</ul>
-</li>
-<li>变量是集合<ul>
-<li>空集合（Empty）</li>
-<li>对集合的大小应用<code>数值变量</code>的边界</li>
-<li>调整次序：升序、降序</li>
-</ul>
-</li>
-<li>变量有规律<ul>
-<li>比如对于Math.sqrt，给出n^2-1，和n^2+1的边界</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>所有独立执行通路测试：保证每一条代码，每个分支都经过测试<ul>
-<li>代码覆盖率<ul>
-<li>语句覆盖：保证每一个语句都执行到了</li>
-<li>判定覆盖（分支覆盖）：保证每一个分支都执行到</li>
-<li>条件覆盖：保证每一个条件都覆盖到true和false（即if、while中的条件语句）</li>
-<li>路径覆盖：保证每一个路径都覆盖到</li>
-</ul>
-</li>
-<li>相关软件<ul>
-<li>Cobertura：语句覆盖</li>
-<li>Emma: Eclipse插件Eclemma</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>各条错误处理通路测试：保证每一个异常都经过测试  </li>
-</ul>
-</li>
-<li><p>单元测试的任务（在Android上）</p>
-<ul>
-<li>所有的Model、Presenter/ViewModel、Api、Utils等类的public方法</li>
-<li>Data类除了getter、setter、toString、hashCode等一般自动生成的方法之外的逻辑部分</li>
-<li>自定义View的功能：比如set data以后，text有没有显示出来等等，简单的交互，比如click事件，负责的交互一般不测，比如touch、滑动事件等等。</li>
-<li>Activity的主要功能：比如view是不是存在、显示数据、错误信息、简单的点击事件等。比较复杂的用户交互比如onTouch，以及view的样式、位置等等可以不测。因为不好测。</li>
-</ul>
-</li>
-<li><p>出现BUG</p>
-<p> 先编写一个单元测试，这个测试针对于这个BUG。由于它是一个BUG，所以显然这个单元测试一开始给出的结果会是失败的。此时你修复BUG，并运行测试。如果测试成功，则表示你成功修复了这个BUG；如果测试失败，则表示BUG仍然存在。</p>
-<p> 换句话说，这个单元测试暴露了这个BUG。BUG本来没看出来，而这个单元测试的失败表明了BUG的存在。</p>
-<p> 添加新功能也是同样。写出一个会失败的测试，表示缺少这个功能。然后通过修改代码使得测试通过，就表明你成功添加了新功能。 </p>
-</li>
-<li><p>其他<br> 看到 add(a, b) 这种测试例子我就来气。太过于简单，以至于没有代表性。<br> 比如你看完了add(a, b)和sub(a, b)这些例子，那么我问你，要测试一个读取文件的read()方法该如何测试？<br> 在《重构：改善既有代码的设计》里面，有个测试读取文件的例子，那个例子看起来舒服多了。</p>
-<p> 《测试驱动开发  Kent Beck》</p>
-</li>
-<li><p>Mock/Stub<br> Mock和Stub是两种测试代码功能的方法。Mock测重于对功能的模拟。Stub测重于对功能的测试重现。比如对于List接口，Mock会直接对List进行模拟，而Stub会新建一个实现了List的TestList，在其中编写测试的代码。  </p>
-<p> 强烈建议优先选择Mock方式，因为Mock方式下，模拟代码与测试代码放在一起，易读性好，而且扩展性、灵活性都比Stub好。</p>
-</li>
-</ol>
 <hr>
-<p>参考文章：<br><a href="https://segmentfault.com/a/1190000006811141" target="_blank" rel="external">https://segmentfault.com/a/1190000006811141</a></p>
-<p>依赖隔离：<br>依赖：当前类A需要调用其他类B的方法，A依赖于B。<br>隔离方法：<br>将B改成一个接口C。<br>将A中的B类替换为接口C。</p>
+<p>  <img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173701977-299176036.png" alt=""></p>
+<hr>
 <ul>
-<li>在项目执行代码中：传入A的对象是接口C的一个派生类D（实现了接口C）。这个D是项目中实际会运行的代码，对于接口C是完整的实现。  </li>
-<li>在单元测试的代码（独立于项目执行代码，实际运行程序时要把这部分删掉）中：传入A的对象也是实现了接口C的一个派生类E，但是这个类与D不同，它对于接口C的实现可能就只是一个return。从而模拟（Mock）了派生类D的行为，使得在测试的时候，不需要使用D类。</li>
+<li><p>分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173718133-151518132.png" alt=""></p>
+</li>
 </ul>
-<p>类A：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">public class Calculater &#123;</div><div class="line"></div><div class="line">    public double divide(int a, int b) &#123;</div><div class="line">        // 检测被除数是否为0</div><div class="line">        if (MathUtils.checkZero(b)) &#123;</div><div class="line">            throw new RuntimeException(&quot;dividend is zero&quot;);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        return (double) a / b;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>它调用了类B（MathUtils）的checkZero方法。于是类A依赖于类B的checkZero方法。  </p>
-<p>类B是一个具体实现的类：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">public class MathUtils &#123;</div><div class="line">    public static boolean checkZero(int num) &#123;</div><div class="line">        return num == 0;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>在知道产生依赖之后，要将类B改成一个接口(前缀I表示这是一个接口)：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public interface IMathUtils &#123;</div><div class="line">    public boolean checkZero(int num);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>在类A的代码中，将B替换成该接口：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">public class Calculater &#123;</div><div class="line"></div><div class="line">    IMathUtils mathUtils = new MathUtils();   // 这里的代码改动了</div><div class="line">    </div><div class="line">    // 这里的代码改动了。中间有一个地方向该类传入了mathUtils</div><div class="line">    public void setMathUtils(IMathUtils mathUtils)&#123;</div><div class="line">        this.mathUtils = mathUtils;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public double divide(int a, int b) &#123;</div><div class="line">        if (mathUtils.checkZero(b)) &#123; // 这里的代码改动了</div><div class="line">            throw ...</div><div class="line">        &#125;</div><div class="line">        return (double) a / b;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>之前的B是一个静态类，不需要声明，但改成接口后需要声明。  </p>
-<p>这样改动之后呢？<br>对于实际运行的代码，要有一个类去实现IMathUtils接口，然后传入Calculater。<br>对于用于测试的代码，也是一个类实现IMathUtils接口，然后传入Calculater。但不同的是，这个类的实现可能只需添加一个return语句，不用细致实现。</p>
-<h3 id="帮我们快捷实现用于测试接口的一个框架"><a href="#帮我们快捷实现用于测试接口的一个框架" class="headerlink" title="帮我们快捷实现用于测试接口的一个框架"></a>帮我们快捷实现用于测试接口的一个框架</h3><ol>
-<li>Mockito<br>对于刚才那个接口IMathUtils，我们可以不用再新建一个类去实现它，而是交给Mockito。<br>IMathUtils mathUtils = mock(IMathUtils.class); // 生成mock对象</li>
-</ol>
-<p>when(mathUtils.checkZero(1)).thenReturn(false);  // 这里是快捷实现，你告诉Mockito，如果在下面代码调用了mathUtils.checkZero()并传入参数<code>1</code>，那么就让调用这个方法的地方返回<code>false</code>这个值。</p>
-<h3 id="如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了"><a href="#如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了" class="headerlink" title="如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了"></a>如果既要请求网络，又要保存数据，还要显示界面，那就是集成测试了</h3><p>单元测试相关名词释义一览：<br>依赖注入：  </p>
-<p><a href="http://mday.mogu.io/" target="_blank" rel="external">关于 Android 单元测试的一切</a><br><a href="http://www.cnblogs.com/yangcaogui/archive/2012/02/08/2336123.html" target="_blank" rel="external">http://www.cnblogs.com/yangcaogui/archive/2012/02/08/2336123.html</a>  </p>
+<hr>
+<p><a name="third"></a></p>
+<p>###二、Fork项目到个人的仓库</p>
+<ul>
+<li><p>点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173728117-1181892624.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>Fork完成后</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173734758-2060034854.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<p><a name="four"></a></p>
+<p>###三、Clone项目到本地</p>
+<ul>
+<li><p>首先是clone，clone的地址可以直接点击按钮复制（如下图）。</p>
+<blockquote>
+<p>推荐使用SSH协议，用HTTP协议有时会出问题。<br>注意，这里clone的是你自己仓库里的项目  </p>
+</blockquote>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173744086-1895687789.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地  </p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173754508-232839332.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>此时你只能看到master分支，并没有把dev分支clone下来。使用 <code>git branch</code> 命令查看本地分支，发现本地只有master分支。如下图的①  </p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173804774-901439442.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>如上图的②，使用 <code>git branch -a</code> 查看所有分支，就能看到远程分支。</li>
+<li>根据远程分支，我们可以创建一个新的本地分支dev，并把该项目的dev分支的内容放到本地dev分支。如上图③。<blockquote>
+<p><code>git checkout -b dev origin/dev</code> 的意思是，创建一个dev分支（-b），并把远程dev分支（origin/dev）的内容放在该分支内。接着切换到该分支（checkout）</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>现在使用 <code>git branch</code> 可以查看两个分支，并且用 <code>dir</code> 就能看到dev分支的内容了。想切换回master分支的时候，再用 <code>git checkout master</code> 即可。</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173815383-1352448645.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。</li>
+</ul>
+<hr>
+<p><a name="five"></a></p>
+<p>###四、和团队项目保持同步  </p>
+<blockquote>
+<p> 最好在每次对代码修改前都做以下的工作，这样能保证你获取的是最新的代码，在开发过程中，你可能会用到某些新的feature。</p>
+</blockquote>
+<ul>
+<li><p>首先查看有没有设置upstream，使用 <code>git remote -v</code> 命令来查看。如下图①</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173823883-310889332.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>如果没有显示upstream，则使用 <code>git remote add upstream 团队项目地址</code> 命令。如上图②</li>
+<li>接着再次使用 <code>git remote -v</code> ，如果如上图③，显示出了upstream，则表示设置好了</li>
+</ul>
+<hr>
+<ul>
+<li><p>开始同步。首先执行 <code>git fetch upstream</code> 获取团队项目最新版本。如下图①</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173833321-842340487.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>此时并没有把最新版本合并到你本地的分支上，因此还需要一步。如上图②，执行 <code>git merge upstream/dev</code> 命令后，会将源分支（upstream/dev）合并到当前本地分支（这里是dev）。<blockquote>
+<p>如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。<br>merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。冲突的解决可以参考→ <a href="http://www.cnblogs.com/schaepher/p/4970291.html#conflict" target="_blank">冲突的解决</a></p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<p><a name="commit"></a></p>
+<p>###五、消除多余的commit记录  </p>
+<blockquote>
+<p>你可能在开发一个功能（或者说解决一个issue）的过程中，碰到要临时commit才能继续工作，比如切换分支。这样你就没办法保证一个功能对应一个commit。多余的commit记录会使人在查看整个项目的commit记录时，感觉很乱。对版本管理者的一些操作也会带来不必要的麻烦。  </p>
+</blockquote>
+<ul>
+<li>使用 <code>git reset --soft 版本号</code> 来消除不必要的commit记录。<br>例如你在 </li>
+</ul>
+<hr>
+<p><a name="six"></a></p>
+<p>###六、push修改到自己的项目上</p>
+<ul>
+<li><p>解决冲突后，就可以使用 <code>git push</code> 命令将本地的修改同步到自己的GitHub仓库上了。</p>
+<blockquote>
+<p>注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。</p>
+</blockquote>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173844258-889781053.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<p><a name="seven"></a></p>
+<p>###七、请求合并到团队项目上</p>
+<ul>
+<li><p>首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request  </p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173852555-1275593404.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>下图左边红框，表示要合并到fzu2015/CourseManagement项目的dev分支。</li>
+<li>下图右边红框，表示要从自己仓库的dev分支发起合并请求。</li>
+<li><p>点击红框处的 Create pull request就可以发送合并请求了。</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173859774-105197351.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。如下图</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173927555-1477286515.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>以上操作结束后，基本已经好了。</li>
+</ul>
+<hr>
+<p><a name="eight"></a></p>
+<p>###八、团队项目负责人审核及同意合并请求</p>
+<ul>
+<li><p>首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173935789-846829992.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>选择一个Pull request</p>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173942977-1760127709.png" alt=""></p>
+</li>
+</ul>
+<hr>
+<p><a name="notice"></a></p>
+<ul>
+<li><p>项目负责人审核有两个要注意的地方</p>
+<ul>
+<li>一个是下图的①。一定要看清楚是合并到哪个分支。这里是从schaepher的dev分支合并到fzu2015的dev分支。</li>
+<li>另一个是下图的②。点击进去后，就可以查看该Pull request对项目做了哪些修改。这样如果有问题，可以及时发现，并关闭该Pull request。<blockquote>
+<p>如果关闭了，一定要告诉队友，否则他可能会不知道。虽然也可以直接在下面发布Comment告诉他，但队友不一定看到。</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173949711-1666366145.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li>如果没有问题，可以点击Merge pull request。这样就合并好了。</li>
+</ul>
 
     
 
@@ -531,7 +587,7 @@
     $('html').ready(function() {
         setTimeout(function() {
             var disqus_config = function () {
-                this.page.url = 'https://schaepher.github.io/2017/01/19/unit-testing/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.url = 'https://schaepher.github.io/2017/01/19/GitHubTeam/index.html';  // Replace PAGE_URL with your page's canonical URL variable
                 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
             };
 
@@ -562,13 +618,21 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2017/01/19/unit-testing/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2017/01/19/GitHubTeam/" id="post_nav-older" class="next-content">
+        <a href="/2017/01/19/GitImprove/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
