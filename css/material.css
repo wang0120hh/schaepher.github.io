@@ -20,11 +20,20 @@ hr {
 }
 audio,
 canvas,
-img,
 svg,
 video {
     vertical-align: middle
 }
+
+img {
+    border:1px solid #BFBFBF;
+    box-shadow: 5px 5px 5px #888888;
+    max-width: 100%;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
 fieldset {
     border: 0;
     margin: 0;

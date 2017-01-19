@@ -387,120 +387,69 @@
 </blockquote>
 <hr>
 <p><a name="setup"></a></p>
-<h3 id="零、前期准备："><a href="#零、前期准备：" class="headerlink" title="零、前期准备："></a>零、前期准备：</h3><ul>
-<li>首先把队友直接push的权限关掉，即设置成Read。这样可以防止队友误操作，未经审核就把代码push到团队项目上。  </li>
-<li><p>Teams用来分配issue的时候会用到，所以保留下来，并不是没有用。</p>
+<h3 id="零、前期准备："><a href="#零、前期准备：" class="headerlink" title="零、前期准备："></a>零、前期准备：</h3><p>首先把队友直接push的权限关掉，即设置成Read。这样可以防止队友误操作，未经审核就把代码push到团队项目上。<br>Teams用来分配issue的时候会用到，所以保留下来，并不是没有用。</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173652383-2141612893.png" alt=""></p>
-</li>
-</ul>
-<hr>
 <p><a name="dev_branch"></a></p>
-<h3 id="一、创建开发分支"><a href="#一、创建开发分支" class="headerlink" title="一、创建开发分支"></a>一、创建开发分支</h3><ul>
-<li>master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。</li>
-<li><p>输入分支名称后，下面会跳出Create branch，点击即可创建。</p>
+<h3 id="一、创建开发分支"><a href="#一、创建开发分支" class="headerlink" title="一、创建开发分支"></a>一、创建开发分支</h3><p>master分支一般用来发布稳定版本，dev分支（开发分支）用来发布开发版本。<br>输入分支名称后，下面会跳出Create branch，点击即可创建。</p>
 <blockquote>
 <p>下面图片写的是develop，是因为我们这个项目已经有dev分支了。如果你们没有dev分支，那么名字改成dev即可。这个影响不大。</p>
 </blockquote>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173701977-299176036.png" alt=""></p>
-</li>
-<li><p>分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。</p>
+<p>分支创建完毕后，会自动跳转到dev分支。由于dev分支是从master分支上创建的，因此内容与master分支一致。</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173718133-151518132.png" alt=""></p>
-</li>
-</ul>
-<hr>
 <p><a name="fork"></a></p>
-<h3 id="二、Fork项目到个人的仓库"><a href="#二、Fork项目到个人的仓库" class="headerlink" title="二、Fork项目到个人的仓库"></a>二、Fork项目到个人的仓库</h3><ul>
-<li><p>点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。</p>
+<h3 id="二、Fork项目到个人的仓库"><a href="#二、Fork项目到个人的仓库" class="headerlink" title="二、Fork项目到个人的仓库"></a>二、Fork项目到个人的仓库</h3><p>点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173728117-1181892624.png" alt=""></p>
-</li>
-<li><p>Fork完成后</p>
+<p>Fork完成后</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173734758-2060034854.png" alt=""></p>
-</li>
-</ul>
 <p><a name="clone"></a></p>
-<h3 id="三、Clone项目到本地"><a href="#三、Clone项目到本地" class="headerlink" title="三、Clone项目到本地"></a>三、Clone项目到本地</h3><ul>
-<li><p>首先是clone，clone的地址可以直接点击按钮复制（如下图）。</p>
+<h3 id="三、Clone项目到本地"><a href="#三、Clone项目到本地" class="headerlink" title="三、Clone项目到本地"></a>三、Clone项目到本地</h3><p>首先是clone，clone的地址可以直接点击按钮复制（如下图）。</p>
 <blockquote>
 <p>推荐使用SSH协议，用HTTP协议有时会出问题。<br>注意，这里clone的是你自己仓库里的项目  </p>
 </blockquote>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173744086-1895687789.png" alt=""></p>
-</li>
-<li><p>打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地  </p>
+<p>打开git命令行，输入指令和刚才复制的地址，回车即可克隆到本地  </p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173754508-232839332.png" alt=""></p>
-</li>
-<li><p>此时你只能看到master分支，并没有把dev分支clone下来。使用 <code>git branch</code> 命令查看本地分支，发现本地只有master分支。如下图的①  </p>
+<p>此时你只能看到master分支，并没有把dev分支clone下来。使用 <code>git branch</code> 命令查看本地分支，发现本地只有master分支。如下图的①  </p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173804774-901439442.png" alt=""></p>
-</li>
-<li><p>如上图的②，使用 <code>git branch -a</code> 查看所有分支，就能看到远程分支。</p>
-</li>
-<li><p>根据远程分支，我们可以创建一个新的本地分支dev，并把该项目的dev分支的内容放到本地dev分支。如上图③。</p>
+<p>如上图的②，使用 <code>git branch -a</code> 查看所有分支，就能看到远程分支。<br>根据远程分支，我们可以创建一个新的本地分支dev，并把该项目的dev分支的内容放到本地dev分支。如上图③。</p>
 <blockquote>
 <p><code>git checkout -b dev origin/dev</code> 的意思是，创建一个dev分支（-b），并把远程dev分支（origin/dev）的内容放在该分支内。接着切换到该分支（checkout）</p>
 </blockquote>
-</li>
-<li><p>现在使用 <code>git branch</code> 可以查看两个分支，并且用 <code>ls</code> 或者 <code>dir</code> 就能看到dev分支的内容了。想切换回master分支的时候，再用 <code>git checkout master</code> 即可。</p>
+<p>现在使用 <code>git branch</code> 可以查看两个分支，并且用 <code>ls</code> 或者 <code>dir</code> 就能看到dev分支的内容了。想切换回master分支的时候，再用 <code>git checkout master</code> 即可。</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173815383-1352448645.png" alt=""></p>
-</li>
-<li><p>上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。</p>
-</li>
-</ul>
+<p>上面的操作完成后，你就可以在本地进行开发了。但是如果要将你修改完的代码合并到团队项目上，还需要进行下面的操作。</p>
 <p><a name="fetch"></a></p>
-<h3 id="四、和团队项目保持同步"><a href="#四、和团队项目保持同步" class="headerlink" title="四、和团队项目保持同步"></a>四、和团队项目保持同步</h3><ul>
-<li><p>首先查看有没有设置upstream，使用 <code>git remote -v</code> 命令来查看。如下图①</p>
+<h3 id="四、和团队项目保持同步"><a href="#四、和团队项目保持同步" class="headerlink" title="四、和团队项目保持同步"></a>四、和团队项目保持同步</h3><p>首先查看有没有设置upstream，使用 <code>git remote -v</code> 命令来查看。如下图①</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173823883-310889332.png" alt=""></p>
-</li>
-<li><p>如果没有显示upstream，则使用 <code>git remote add upstream 团队项目地址</code> 命令。如上图②</p>
-</li>
-<li><p>接着再次使用 <code>git remote -v</code> ，如果如上图③，显示出了upstream，那么就设置好了</p>
-</li>
-<li><p>开始同步。首先执行 <code>git fetch upstream</code> 获取团队项目最新版本。如下图①</p>
+<p>如果没有显示upstream，则使用 <code>git remote add upstream 团队项目地址</code> 命令。如上图②<br>接着再次使用 <code>git remote -v</code> ，如果如上图③，显示出了upstream，那么就设置好了</p>
+<p>开始同步。首先执行 <code>git fetch upstream</code> 获取团队项目最新版本。如下图①</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173833321-842340487.png" alt=""></p>
-</li>
-<li><p>此时并没有把最新版本合并到你本地的分支上，因此还需要一步。如上图②，当前分支是dev分支，执行 <code>git merge upstream/dev</code> 命令后，会将源分支（upstream/dev）合并到当前分支（dev）。</p>
+<p>此时并没有把最新版本合并到你本地的分支上，因此还需要一步。如上图②，当前分支是dev分支，执行 <code>git merge upstream/dev</code> 命令后，会将源分支（upstream/dev）合并到当前分支（dev）。</p>
 <blockquote>
 <p>如果你是在本地的master分支上开发，那么在使用该命令前，先切换到master分支。<br>merge的时候，有可能碰到冲突。需要解决冲突才能继续下面的操作。冲突的解决可以参考→ <a href="http://www.cnblogs.com/schaepher/p/4970291.html#conflict" target="_blank" rel="external">冲突的解决</a></p>
 </blockquote>
-</li>
-</ul>
-<hr>
 <p><a name="push"></a></p>
-<h3 id="五、push修改到自己的项目上"><a href="#五、push修改到自己的项目上" class="headerlink" title="五、push修改到自己的项目上"></a>五、push修改到自己的项目上</h3><ul>
-<li><p>解决冲突后，就可以使用 <code>git push</code> 命令将本地的修改同步到自己的GitHub仓库上了。</p>
+<h3 id="五、push修改到自己的项目上"><a href="#五、push修改到自己的项目上" class="headerlink" title="五、push修改到自己的项目上"></a>五、push修改到自己的项目上</h3><p>解决冲突后，就可以使用 <code>git push</code> 命令将本地的修改同步到自己的GitHub仓库上了。</p>
 <blockquote>
 <p>注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。</p>
 </blockquote>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173844258-889781053.png" alt=""></p>
-</li>
-</ul>
 <p><a name="pull_request"></a></p>
-<h3 id="六、请求合并到团队项目上"><a href="#六、请求合并到团队项目上" class="headerlink" title="六、请求合并到团队项目上"></a>六、请求合并到团队项目上</h3><ul>
-<li><p>首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request  </p>
+<h3 id="六、请求合并到团队项目上"><a href="#六、请求合并到团队项目上" class="headerlink" title="六、请求合并到团队项目上"></a>六、请求合并到团队项目上</h3><p>首先到你的GitHub上，进入你Fork的仓库里。点击红框处的Pull request  </p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173852555-1275593404.png" alt=""></p>
-</li>
-<li><p>下图左边红框，表示要合并到fzu2015/CourseManagement项目的dev分支。</p>
-</li>
-<li>下图右边红框，表示要从自己仓库的dev分支发起合并请求。</li>
-<li><p>点击红框处的 Create pull request就可以发送合并请求了。</p>
+<p>下图左边红框，表示要合并到fzu2015/CourseManagement项目的dev分支。<br>下图右边红框，表示要从自己仓库的dev分支发起合并请求。<br>点击红框处的 Create pull request就可以发送合并请求了。</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173859774-105197351.png" alt=""></p>
-</li>
-<li><p>当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。如下图</p>
+<p>当然，在发送请求之前，你可以检查一下你都改了哪些东西。在上面那个页面往下拉，就可以看到两者的对比。如下图</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173927555-1477286515.png" alt=""></p>
-</li>
-<li><p>以上操作结束后，基本已经好了。</p>
-</li>
-</ul>
+<p>以上操作结束后，团队成员的流程就结束了。最后一步交给团队项目负责人来完成。</p>
 <p><a name="review"></a></p>
-<h3 id="七、团队项目负责人审核及同意合并请求"><a href="#七、团队项目负责人审核及同意合并请求" class="headerlink" title="七、团队项目负责人审核及同意合并请求"></a>七、团队项目负责人审核及同意合并请求</h3><ul>
-<li><p>首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。</p>
+<h3 id="七、团队项目负责人审核及同意合并请求"><a href="#七、团队项目负责人审核及同意合并请求" class="headerlink" title="七、团队项目负责人审核及同意合并请求"></a>七、团队项目负责人审核及同意合并请求</h3><p>首先进入GitHub的团队项目仓库中。此时右边的Pull requests显示当前项目有几个Pull request。点击进入查看。</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173935789-846829992.png" alt=""></p>
-</li>
-<li><p>选择一个Pull request</p>
+<p>选择一个Pull request</p>
 <p><img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173942977-1760127709.png" alt=""></p>
-</li>
-</ul>
 <p><a name="notice"></a></p>
-<ul>
-<li><p>项目负责人审核有两个要注意的地方</p>
+<p>项目负责人审核有两个要注意的地方</p>
 <ul>
 <li>一个是下图的①。一定要看清楚是合并到哪个分支。这里是从schaepher的dev分支合并到fzu2015的dev分支。</li>
 <li><p>另一个是下图的②。点击进去后，就可以查看该Pull request对项目做了哪些修改。这样如果有问题，可以及时发现，并关闭该Pull request。</p>
@@ -508,8 +457,6 @@
 <p>如果关闭了，一定要告诉队友，否则他可能会不知道。虽然也可以直接在下面发布Comment告诉他，但队友不一定看到。</p>
 </blockquote>
 <p>  <img src="http://images2015.cnblogs.com/blog/809218/201511/809218-20151103173949711-1666366145.png" alt=""></p>
-</li>
-</ul>
 </li>
 <li><p>如果没有问题，可以点击Merge pull request。这样就合并好了。</p>
 </li>
